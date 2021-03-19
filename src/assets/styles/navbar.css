@@ -1,0 +1,32 @@
+.bg-dark {
+	z-index: 100%;
+	backdrop-filter: blur(10px);
+	background-color: black!important;
+}
+
+.navbar {
+	font-family: 'Monotype Corsiva', 'cursive'!important;
+}
+
+.navbar-brand {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.nav-item {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+/* .active {
+	color: rgb(255 180 23)!important;;
+} */
+
+#nav.fixed {
+	background-color: #000000f5!important;
+}
+
+.select-language {
+	background-color: transparent;
+	color: (255 255 255);
+}

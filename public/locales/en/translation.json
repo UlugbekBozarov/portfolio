@@ -1,0 +1,62 @@
+{
+    "Navbar": {
+        "1": "Home",
+        "2": "Services",
+        "3": "Portfolio",
+        "4": "About",
+        "5": "Contact"
+    },
+    
+    "Home": {
+        "1": "Welcome to Website!",
+        "2": "My name is Ulug'bek. I am full Stack developer",
+        "3": "Next Page"
+    },
+    "Services": {
+        "1": "Hello! My name is Ulug'bek.",
+        "2": "I can work at frontend for HTML, CSS, JavaScript and React hook. This portfolio is created by react hook.", 
+        "3": "I learned Java programms and Java Spring boot Framework ",
+        "4": "I can work with Pl/Sql , MySql and PostgreSql in Database",
+        "5": "I can create database and Rest Api at Java Spring-Boot, and also, I can use api at React hook"
+    },
+    "Portfolio": {
+        "1": {
+            "Title": "My Portfolio",
+            "Description": "This portfolio is created by React hook"
+        },
+        "2": {
+            "Title": "Online Shopping Backend",
+            "Description": "In this data base used PostgreSql and Oracle, Backand was  created by using Jpa, Rest Controller, Services Spring Security and JWT token"
+        },
+        "3": {
+            "Title": "Online Shopping Frontend",
+            "Description": "Html, Css,, JavaScript, Bootstrap and React Hook technologies were used for Frontent."
+        }
+    },
+    "About": {
+        "1": "Bozarov Ulug'bek",
+        "2": "8-january in 1999",
+        "3": "Place of Birth: Farg'ona region, Buvayda district, Qo'ng'irot village",
+        "4": "Nation: Uzbek",
+        "5": "Reference: bachelor",
+        "6": "Student of Toshkent University Informetion Technology.",
+        "7": "Biography"
+    },
+    "Contact": {
+        "1": "Let's talk.",
+        "2": "Get in touch via the form below, or by emailing",
+        "3": "",
+        "4": "Name: ",
+        "5": "Enter your name",
+        "6": "Email Address: ",
+        "7": "Enter your email address",
+        "8": "Message: ",
+        "9": "Enter your message",
+        "10": "Submit"
+    },
+    "General": {
+        "View": "View the site",
+        "Download": "Download the document",
+        "Resume": "Download Biography"
+    }
+}

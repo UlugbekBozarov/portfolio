@@ -1,0 +1,61 @@
+{
+    "Navbar": {
+        "1": "Bosh sahifa",
+        "2": "Xizmatlar",
+        "3": "Portfolio",
+        "4": "Men haqimda",
+        "5": "Bog'lanish"
+    },
+    "Home": {
+        "1": "Hush kelibsiz!",
+        "2": "Meni ismim Ulug'bek. Men fullStack dasturchiman.",
+        "3": "Keyingi sahifa"
+    },
+    "Services": {
+        "1": "Salom! meni ismim Ulug'bek.",
+        "2": "Frontent bo'yicha Html, Css, Bootstrap, JavaScript va React-Hookda ishlay olaman. Ushbu portfolio react hook da yaratilgan.",
+        "3": "Backend dasturlash tillaridan Java Dasturlash tilini o'rganganman. Java Spring boot Frameworkida ishlaganman.",
+        "4": "Database bo'yicha Pl/Sql, MySql va PostgreSql da ham ishlaganman.",
+        "5": "Men baza yaratib, Java Spring-Bootda Rest Api yasashim va bu api ni React hookda proyektlarida ishlata olaman."
+    },
+    "Portfolio": {
+        "1": {
+            "Title": "Mening Portfoliom",
+            "Description": "Portfolio. Bu proyektda React hook texnologiyasidan foydalanilgan."
+        },
+        "2": {
+            "Title": "Online Magazin Backend",
+            "Description": "Bu proyektni bazasi PostgreSql va Oracle Database da qilingan. Backend qismi Java ning Spring Boot frameworkidan foydalanilgan. Bunda Jpa, Rest Controller, Services Spring Security va JWT token ishlatilgan."
+        },
+        "3": {
+            "Title": "Online magazin Frontend",
+            "Description": "Frontent uchun Html, Css, JavaScript, Bootstrap va React Hook texnologiyalaridan foydalanilgan."
+        }
+    },
+    "About": {
+        "1": "Bozarov Ulug'bek",
+        "2": "1999-yil 8-yanvar",
+        "3": "Tug'ilgan joy: Farg'ona viloyati, Buvayda tumani Qo'ng'irot qishlog'i",
+        "4": "Millati: O 'zbek",
+        "5": "Ma'lumoti: Tugallanmagan oliy",
+        "6": "Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universiteti 3 kurs talabasi.",
+        "7": "Tarjimai hol"
+    },
+    "Contact": {
+        "1": "Keling gaplashamiz.",
+        "2": "Bog'lanish uchun quyidagi formani to'ldiring yoki ",
+        "3": "ga murojaat qiling.",
+        "4": "F.I.Sh: ",
+        "5": "F.I.Sh ni kiriting",
+        "6": "Email Manzil: ",
+        "7": "Email manzilingizni kiriting",
+        "8": "Xabar: ",
+        "9": "Xabar matnini kiriting",
+        "10": "Yuborish"
+    },
+    "General": {
+        "View": "Saytni ko'rish",
+        "Download": "Dokumentatsiyani yuklab olish",
+        "Resume": "Tarjimai holni yuklab olish"
+    }
+}
