@@ -1,0 +1,9 @@
+#footer {
+    font-family: 'Monotype Corsiva', 'cursive'!important;
+    width: 100%;
+}
+
+#footer-messenger {
+    display: flex!important;
+    justify-content: center;
+}

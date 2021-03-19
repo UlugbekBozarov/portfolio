@@ -1,0 +1,33 @@
+/* .carousel-inner img {
+  width: 100%;
+} */
+
+.cursor {
+  cursor: zoom-in;
+}
+
+.c_image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.fullScreen {
+  min-width: 100%!important;
+  min-height: 100vh!important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  
+  cursor: zoom-out;
+}

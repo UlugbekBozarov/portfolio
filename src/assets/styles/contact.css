@@ -1,0 +1,44 @@
+#contact {
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('https://ik.imagekit.io/houseofcoders/wp-content/uploads/2017/10/portfolio-background.png');
+        background-size: cover;
+    width: 100%;
+    min-height: 100%;
+}
+
+.contact-block {
+    min-height: calc(100vh - 185px);
+}
+
+.contact-full {
+    animation: move 3s;
+    opacity: 1;
+}
+
+@keyframes move {
+	from {
+	  	opacity: 0;
+	}
+	to {
+	  	opacity: 1;
+	}
+}
+
+.form-control {
+    background-color: rgb(35, 35, 35);
+    border: 1px solid rgb(50, 50, 50);
+    font-size: 13px;
+    color: seashell;
+}
+
+#mail-link {
+    text-decoration: none;
+}
+
+.contaxt-footer {
+    bottom: 0;
+}

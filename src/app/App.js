@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './shared/navbar';
 import RightBar from './shared/rightBar';
 
-// import Routes from './routes';
+import Routes from './routes';
 
 const App = () => {
 
@@ -29,7 +29,7 @@ const App = () => {
 		<Router>
 			<Navbar />
 			<div style={getHeight}>
-				{/* <Routes /> */}
+				<Routes />
 				<RightBar />
 			</div>
 		</Router>

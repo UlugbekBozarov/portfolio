@@ -1,0 +1,47 @@
+#about {
+    background: 
+    	linear-gradient(
+    	  	rgba(0, 0, 0, 0.85),
+    	  	rgba(0, 0, 0, 0.85)
+    	),
+		url('https://image.freepik.com/free-photo/view-desk-items-white-background_23-2148604853.jpg');
+	background-size: cover;
+}
+
+.about-block {
+    min-height: calc(100vh - 185px);
+}
+
+.about-container {
+	background-color: darkgreen;
+	border-radius: 20px;
+	margin-top: 20px;
+}
+
+.card {
+	transition: all 0.4s linear;
+}
+
+.card:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 10px white;
+	transition: all 0.4s linear;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.rounded-sm-top {
+		border-top-right-radius: .25rem!important;
+		border-top-left-radius: .25rem!important;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	.rounded-md-left {
+		border-top-left-radius: .25rem!important;
+		border-bottom-left-radius: .25rem!important;
+	}
+}
+
