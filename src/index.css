@@ -12,7 +12,10 @@ code {
     monospace;
 }
 
-.root {
-  min-width: 100%;
-  min-height: 100%;
+.spinner {
+  width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
