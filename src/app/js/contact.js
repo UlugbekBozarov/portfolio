@@ -29,7 +29,7 @@ const Contact = () => {
 		if (username.current.value !== "" && b && message.current.value !== "") {
 
 			axios.post(
-				"/telegram/send-message",
+				"https://online-shopping-bac.herokuapp.com/telegram/send-message",
 				{
 					username: username.current.value,
 					email: email.current.value,
