@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import Footer from './footer';
@@ -17,26 +17,41 @@ const Contact = () => {
 	const username = useRef();
 	const email = useRef();
 	const message = useRef();
+	const [wasValidated, setWasValidated] = useState('');
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		axios.post(
-			"https://online-shopping-bac.herokuapp.com/telegram/send-message",
-			{
-				username: username.current.value,
-				email: email.current.value,
-				message: message.current.value
-			}
-		).then(response => {
-			successfulAlert(response.data.message);
-			username.current.value = '';
-			email.current.value = '';
-			message.current.value = '';
+		const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		
+		let b = re.test(String(email.current.value).toLowerCase());
 
-		}).catch((err) => {
-			errorAlert(err.message);
-		})
+		if (username.current.value !== "" && b && message.current.value !== "") {
+
+			axios.post(
+				"/telegram/send-message",
+				{
+					username: username.current.value,
+					email: email.current.value,
+					message: message.current.value
+				}
+			).then(response => {
+				successfulAlert(response.data.message);
+				username.current.value = '';
+				email.current.value = '';
+				message.current.value = '';
+				if (response.status == 201) {
+					setWasValidated('');
+				}
+	
+			}).catch((err) => {
+				errorAlert(err.message);
+			})
+		} else {
+			setWasValidated('was-validated');
+		}
+		
+		
 
 	}
 
@@ -71,28 +86,31 @@ const Contact = () => {
 						{t('Contact.3')}
 					</p>
 					<form>
-						<div className="form-group">
+						<div className={wasValidated + " form-group"} >
 							<label htmlFor="your-name">
 								{t('Contact.4')}
 							</label>
-							<input id="your-name" className="form-control" type="text" ref={username} autoFocus={true} placeholder={t('Contact.5')} />
+							<input id="your-name" className="form-control" type="text" ref={username} autoFocus={true} placeholder={t('Contact.5')} required />
+							<div class="invalid-feedback">Please fill out this field.</div>
 						</div>
 
-						<div className="form-group">
+						<div className={wasValidated + " form-group"}>
 							<label htmlFor="email-address">
 								{t('Contact.6')}
 							</label>
-							<input id="email-address" className="form-control" type="text" ref={email} placeholder={t('Contact.7')} />
+							<input id="email-address" className="form-control" type="text" ref={email} placeholder={t('Contact.7')} required />
+							<div class="invalid-feedback">Please fill in this field correctly.</div>
 						</div>
 
-						<div className="form-group">
+						<div className={wasValidated + " form-group"}>
 							<label htmlFor="your-message">
 								{t('Contact.8')}
 							</label>
-							<textarea id="your-message" className="form-control" type="text" ref={message} placeholder={t('Contact.9')} style={{ height: "100px" }} />
+							<textarea id="your-message" className="form-control" type="text" ref={message} placeholder={t('Contact.9')} style={{ height: "100px" }} required />
+							<div class="invalid-feedback">Please fill out this field.</div>
 						</div>
 						<div className="form-group">
-							<button className="btn text-warning py-2 px-4 font-weight-bold" onClick={handleSubmit} style={{ backgroundColor: "rgb(35 35 35)" }}>
+							<button className="btn text-warning py-2 px-4 font-weight-bold" onClick={handleSubmit}  style={{ backgroundColor: "rgb(35 35 35)" }}>
 								{t('Contact.10')}
 							</button>
 						</div>

@@ -3,9 +3,16 @@ body {
   font-family: 'Monotype Corsiva', 'cursive'!important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.root {
+  min-width: 100%;
+  min-height: 100%;
 }

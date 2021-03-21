@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
+import Spinner from './app/shared/spinner';
 import './index.css';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
@@ -8,7 +9,7 @@ import './i18next';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback={(<div className="w-100 h-100 d-flex justify-content-center align-items-center">Loading ~~~~</div>)} >
+    <Suspense fallback={(<Spinner />)} >
       <App />
     </Suspense>
   </React.StrictMode>,
