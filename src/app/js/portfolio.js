@@ -29,12 +29,12 @@ const Portfolio = () => {
 				{
 					id: 2,
 					imgSrc: "../images/ProjectImages/Portfolio/2.png",
-					imgAlt: "Hello World",
+					imgAlt: "Portfolio",
 				},
 				{
 					id: 3,
 					imgSrc: "../images/ProjectImages/Portfolio/3.png",
-					imgAlt: "Hello World",
+					imgAlt: "Portfolio",
 				},
 			],
 		},
@@ -49,32 +49,32 @@ const Portfolio = () => {
 				{
 					id: 1,
 					imgSrc: "../images/ProjectImages/oshb/1.png",
-					imgAlt: "Portfolio image",
+					imgAlt: "Swagger.ui",
 				},
 				{
 					id: 2,
 					imgSrc: "../images/ProjectImages/oshb/2.png",
-					imgAlt: "Hello World",
+					imgAlt: "Swagger.ui",
 				},
 				{
 					id: 3,
 					imgSrc: "../images/ProjectImages/oshb/3.png",
-					imgAlt: "Hello World",
+					imgAlt: "Swagger.ui",
 				},
 				{
 					id: 4,
 					imgSrc: "../images/ProjectImages/oshb/4.png",
-					imgAlt: "Hello World",
+					imgAlt: "Swagger.ui",
 				},
 				{
 					id: 5,
 					imgSrc: "../images/ProjectImages/oshb/5.png",
-					imgAlt: "Hello World",
+					imgAlt: "Swagger.ui",
 				},
 				{
 					id: 6,
 					imgSrc: "../images/ProjectImages/oshb/6.png",
-					imgAlt: "Hello World",
+					imgAlt: "Swagger.ui",
 				},
 			],
 		},
@@ -89,26 +89,38 @@ const Portfolio = () => {
 				{
 					id: 1,
 					imgSrc:
-						"https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg",
-					imgAlt: "Hello World",
+						"../images/ProjectImages/oshf/1.png",
+					imgAlt: "Online-Shopping-Frontent",
 				},
 				{
 					id: 2,
-					imgSrc: "https://html5css.ru/css/img_forest.jpg",
-					imgAlt: "Hello World",
+					imgSrc: "../images/ProjectImages/oshf/2.png",
+					imgAlt: "Online-Shopping-Frontent",
 				},
 				{
 					id: 3,
 					imgSrc:
-						"https://analyticsindiamag.com/wp-content/uploads/2018/12/image.jpg",
-					imgAlt: "Hello World",
+						"../images/ProjectImages/oshf/3.png",
+					imgAlt: "Online-Shopping-Frontent",
 				},
 				{
 					id: 4,
 					imgSrc:
-						"https://www.gettyimages.pt/gi-resources/images/Homepage/Hero/PT/PT_hero_42_153645159.jpg",
-					imgAlt: "Hello World",
+						"../images/ProjectImages/oshf/4.png",
+					imgAlt: "Online-Shopping-Frontent",
 				},
+				{
+					id: 5,
+					imgSrc:
+						"../images/ProjectImages/oshf/5.png",
+					imgAlt: "Online-Shopping-Frontent",
+				},
+				{
+					id: 6,
+					imgSrc:
+						"../images/ProjectImages/oshf/6.png",
+					imgAlt: "Online-Shopping-Frontent",
+				}
 			],
 		},
 	];
