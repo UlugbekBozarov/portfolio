@@ -42,7 +42,6 @@ const Carousel = ({ mass, carouselId }) => {
 
     const renderCarouselItem = () => {
 
-
         return mass.map(m => {
 
             return (
